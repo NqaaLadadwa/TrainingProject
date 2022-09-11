@@ -55,22 +55,6 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter  {
 
         return authProvider;
     }
-
-  /*  @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .antMatchers("/userr").authenticated()
-                .anyRequest().permitAll()
-                .and()
-                .formLogin()
-                .usernameParameter("userEmail")
-                .defaultSuccessUrl("/userr")
-                .permitAll()
-                .and()
-                .logout().logoutSuccessUrl("/").permitAll();
-    }*/
-
-
 }
 
 
